@@ -1,0 +1,33 @@
+name: Deploy to Supabase
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Supabase CLI
+        run: npm install supabase@latest --no-save
+
+      - name: Login to Supabase
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        run: npx supabase login --token $SUPABASE_ACCESS_TOKEN
+
+      - name: Link project
+        run: npx supabase link --project-ref ${{ secrets.SUPABASE_PROJECT_REF }}
+
+      - name: Push DB migrations
+        run: npx supabase db push --yes
+
+      - name: Deploy Functions
+        run: npx supabase deploy --project-ref ${{ secrets.SUPABASE_PROJECT_REF }} --yes

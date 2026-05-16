@@ -1,0 +1,16 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "This backend provides a comprehensive API for managing vehicle service operations using Supabase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "supabase": "^2.98.2"
+  }
+}
