@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Valentine\'s Garage</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="check_in_vehicle">Check In Vehicle</string>
+    <string name="active_jobs">Active Jobs</string>
+    <string name="checklist">Checklist</string>
+    <string name="reports">Reports</string>
+    <string name="logout">Logout</string>
+    <string name="no_active_jobs">No active jobs.\nTap + to check in a vehicle.</string>
+    <string name="truck_repair_system">Truck Repair Management System</string>
+    <string name="nust_credit">MAP711S — NUST, 2024</string>
+</resources>
