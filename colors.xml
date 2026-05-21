@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colours — Safety Orange industrial palette -->
+    <color name="primary">#FF8C00</color>
+    <color name="on_primary">#2F1500</color>
+    <color name="primary_container">#FF8C00</color>
+
+    <!-- Surfaces (dark layered) -->
+    <color name="background">#1B110A</color>
+    <color name="surface">#1B110A</color>
+    <color name="surface_container">#281D15</color>
+    <color name="surface_container_high">#33281F</color>
+    <color name="on_surface">#F3DFD1</color>
+    <color name="on_surface_variant">#DDC1AE</color>
+    <color name="outline">#A48C7A</color>
+    <color name="outline_variant">#564334</color>
+
+    <!-- Semantic status -->
+    <color name="condition_good">#2E7D32</color>
+    <color name="condition_fair">#E65100</color>
+    <color name="condition_poor">#B71C1C</color>
+
+    <!-- Secondary / info -->
+    <color name="secondary">#B9C7E0</color>
+    <color name="secondary_container">#3C4A5E</color>
+    <color name="on_secondary_container">#ABB9D2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
